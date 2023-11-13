@@ -24,14 +24,16 @@
             flex-flow: row nowrap;          
             height: 60px;                   
             align-items: center;
+            
         }
 
             .logo{
                 background: #ea5455;
                 flex:1 1 auto; 
-                height: 20px;               
+                height: 20px;   
+                align-self: center;            
             }
-
+           
             .nav{
                 background: #ea5455;
                 flex:5 1 auto;              
