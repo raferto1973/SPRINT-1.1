@@ -1,0 +1,90 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    max-width:1200px;
+    
+}
+
+/* css siguiendo la misma estructura de diseño del html */
+
+.padre {
+    display: flex;                          /* Esto inicia Flexbox - lo coloca en columna*/
+    flex-flow: column nowrap;               /* Esto lo coloca como en origen en bloques contiguos*/
+}
+
+    .header{
+        background: #000;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+        .menu{
+            background: #2d4059;
+            display: flex;    
+            flex-flow: row nowrap;          /* lo coloca en columnas*/
+            height: 75px;                   /* Altura de la caja */
+            align-items: center;
+        }
+
+            .logo{
+                background: #ea5455;
+                flex:1 1 auto;              /* Ocupa todo el espacio de la linea*/
+                height: 20px;               /* Altura de la caja */
+            }
+            .nav{
+                background: #ea5455;
+                flex:5 1 auto;              /* Ocupa todo el espacio de la linea*/
+                height: 20px;               /* Altura de la caja */
+            }
+            .social{
+                background: #ea5455;
+                flex:1 1 auto;              /* Ocupa todo el espacio de la linea*/
+                height: 20px;               /* Altura de la caja */
+            }
+
+        .texto-principal{
+            background: #f07b3f;
+        }
+            h1{
+                background: #ffd460;
+            }
+
+    .section{
+        background: #000;
+        display: flex;                      /* lo coloca en columnas*/             
+    }
+
+        .articulos{
+            background: #4e4e6a;
+            flex: 2 1 auto;                 /* Distribuye la caja en la linea*/
+            display: flex;                  /* lo coloca en columnas*/    
+            flex-flow: row wrap;            /* Si las cajas se pasan, salta de linea*/
+        }
+
+            .article{
+                background: #1f6cb0;
+                flex:1 1 40%;               /* Al poner 40% y haber 2 elementos salta de linea*/
+            }
+            .navegacion{
+                background: #70a3c4;
+                flex:1 1 100%;              /* al poner 100% salta de linea y ocupa toda la linea*/
+            }
+
+        aside{
+            background: #f73f52;
+        flex: 1 1 auto;                     /* Distribuye la caja en la linea*/
+        }
+
+            .publicidad{
+                background: #ffea85;
+            }
+            
+    .footer{
+        background: #000;
+       
+    }
+        .pie{
+            background: #e6af2e;
+            
+        }
