@@ -6,11 +6,9 @@
     
 }
 
-/* css siguiendo la misma estructura de diseño del html */
-
-.padre {
-    display: flex;                          /* Esto inicia Flexbox - lo coloca en columna*/
-    flex-flow: column nowrap;               /* Esto lo coloca como en origen en bloques contiguos*/
+.container {
+    display: flex;                          
+    flex-flow: column nowrap;               
 }
 
     .header{
@@ -22,25 +20,25 @@
         .menu{
             background: #2d4059;
             display: flex;    
-            flex-flow: row nowrap;          /* lo coloca en columnas*/
-            height: 60px;                   /* Altura de la caja */
+            flex-flow: row nowrap;          
+            height: 60px;                   
             align-items: center;
         }
 
             .logo{
                 background: #ea5455;
-                flex:1 1 auto;              /* Ocupa todo el espacio de la linea*/
-                height: 20px;               /* Altura de la caja */
+                flex:1 1 auto; 
+                height: 20px;               
             }
             .nav{
                 background: #ea5455;
-                flex:5 1 auto;              /* Ocupa todo el espacio de la linea*/
-                height: 20px;               /* Altura de la caja */
+                flex:5 1 auto;              
+                height: 20px;               
             }
             .social{
                 background: #ea5455;
-                flex:1 1 auto;              /* Ocupa todo el espacio de la linea*/
-                height: 20px;               /* Altura de la caja */
+                flex:1 1 auto;              
+                height: 20px;               
             }
 
         .texto-principal{
@@ -52,28 +50,28 @@
 
     .section{
         background: #000000;
-        display: flex;                      /* lo coloca en columnas*/             
+        display: flex;                      
     }
 
         .articulos{
             background: #4e4e6a;
-            flex: 2 1 auto;                 /* Distribuye la caja en la linea*/
-            display: flex;                  /* lo coloca en columnas*/    
-            flex-flow: row wrap;            /* Si las cajas se pasan, salta de linea*/
+            flex: 2 1 auto;                 
+            display: flex;                  
+            flex-flow: row wrap;            
         }
 
             .article{
                 background: #1f6cb0;
-                flex:1 1 40%;               /* Al poner 40% y haber 2 elementos salta de linea*/
+                flex:1 1 40%;               
             }
             .navegacion{
                 background: #70a3c4;
-                flex:1 1 100%;              /* al poner 100% salta de linea y ocupa toda la linea*/
+                flex:1 1 100%;              
             }
 
         aside{
             background: #f73f52;
-            flex: 1 1 auto;                 /* Distribuye la caja en la linea*/
+            flex: 1 1 auto;                 
         }
 
             .publicidad{
@@ -92,8 +90,8 @@
 @media all and (max-width:800px){
 
     .section {
-        flex-direction: column;                    /* Modificamos a columnas el section*/
-        background: yellow;
+        flex-direction: column;                    
+        background: #f6e142;
     }
 
 }
@@ -107,7 +105,23 @@
     }
 
     .articulos {
-        flex-direction: column;   
+        flex-direction: column;  
+        background-color: #30526e; 
     }
-    
+ 
+    .article {
+        background-color: #70a3c4;
+    }
+
+    .navegacion {
+        background-color: #b4dbca;
+    }
+
+    .aside {
+        background-color: #e07a57;
+    }
+
+    .publicidad {
+        background-color: #ebb26f;
+    }
 }
