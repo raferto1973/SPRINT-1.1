@@ -33,6 +33,11 @@
                 height: 20px;   
                 align-self: center;            
             }
+
+            .logo:hover {
+                transform: scale(1.30);
+                background-color: rgb(236, 84, 218);
+            }
            
             .nav{
                 background: #ea5455;
