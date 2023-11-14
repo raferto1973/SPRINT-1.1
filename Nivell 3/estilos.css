@@ -31,7 +31,7 @@
                 background: #ea5455;
                 flex:1 1 auto; 
                 height: 20px;   
-                align-self: center;            
+                            
             }
 
             .logo:hover {
@@ -119,6 +119,11 @@
         flex-direction: column;
         height: auto;
         align-items: normal;
+    }
+
+    .logo:hover {
+        transform: scale(1.15);
+        
     }
 
     .articulos {
